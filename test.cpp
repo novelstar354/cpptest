@@ -1,21 +1,29 @@
 #include <iostream>
-
-void show_value(int a)
-{
-    std::cout << a << std::endl;
-    return;
-
-    std::cout << "show value" << std::endl;
-}
-
-int add(int a, int b)
-{
-    int c = a + b;
-    return c;
-}
+//g++ test.cpp -o hello
 
 int main()
 {
-    int x = add(10, 20);
-    show_value(x);
+    int a = 3;
+    std::cout << "まず第一に、aは" << a << "である。"<< std::endl;
+    switch (a + 1)
+    {
+        case 1:
+            std::cout << "よって、a + 1 = 1" << std::endl;
+             break;
+        case 2:
+            std::cout << "よって、a + 1 = 2" << std::endl;
+            break;
+        default:
+            std::cout << "よって、a + 1 は1でも2でも3ない" << std::endl;
+            break;
+        case 3:
+            std::cout << "よって、a + 1 = 3" << std::endl;
+            break;
+    }
+}
+
+int absolute(int value)
+{
+    int abs = value < 0 ? -value : value;
+    return abs;
 }
