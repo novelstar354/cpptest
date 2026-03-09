@@ -14,10 +14,13 @@ int main()
             std::cout << "よって、a + 1 = 2" << std::endl;
             break;
         default:
-            std::cout << "よって、a + 1 は1でも2でも3ない" << std::endl;
+            std::cout << "よって、a + 1 は1でも2でも3でも4ない" << std::endl;
             break;
         case 3:
             std::cout << "よって、a + 1 = 3" << std::endl;
+            break;
+        case 4:
+            std::cout << "よって、a + 1 = 4" << std::endl;
             break;
     }
 }
